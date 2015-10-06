@@ -10,5 +10,11 @@ $(document).ready(function() {
     $("img#cat").after("<h1>MEEOW!!</h1>");
   });
 
+  $("h2#kitty").click(function() {
+    $("img#cat").after("<img src='img/kat.jpg'>");
+    $("img.cat").children("img").first().click(function() {
+      $(this).remove();
+    });
+  });
 
 });
